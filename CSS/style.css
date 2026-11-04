@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
+
+header {
+  margin: -9px;
+  background-color: black;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  padding: 0;
+}
+
+nav li {
+  padding: 0.75rem;
+  margin-left: 0;
+  border: 2px solid hotPink;
+  border-radius: 8px;
+  background-color: #fb68fc;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  width: 100px;
+  display: block;
+  margin: 0;
+}
+
+/* h1 {
+  display: block;
+  font-family: "Bitcount Ink", system-ui;
+  font-size: 3rem;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0, "SZP1" 0,
+    "SZP2" 0, "XPN1" 0, "XPN2" 0, "YPN1" 0, "YPN2" 0;
+  background-color: black;
+  margin: 0;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+} */
+
+nav {
+  margin-top: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-left: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+/* h1 is the title, color is the font color */
+h1 {
+  display: block;
+  font-family: "Bitcount Ink", system-ui;
+  font-size: 3rem;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0, "SZP1" 0,
+    "SZP2" 0, "XPN1" 0, "XPN2" 0, "YPN1" 0, "YPN2" 0;
+  background-color: black;
+  margin: 0;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+/* this affects the entire body of the page */
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #ffaeec;
+  color: #e797b2;
+}
+
+/* this will affect the size of the images based on the width/proportion */
+img {
+  display: block;
+  width: 60%;
+  max-width: 250px;
+  margin: 0 auto;
+  justify-self: center;
+  align-self: center;
+}
+p,
+ul,
+ol {
+  background-color: black;
+  color: #e797b2;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 150;
+  background-color: black;
+  color: #e2829f;
+  padding: 1rem;
+}
+
+h3 {
+  color: black;
+}
+
+/* this is for the text before the lists */
+h4 {
+  background-color: black;
+}
+
+/* this will affect when you hover over ordered lists, unordered lists, paragraphs and h4 (list titles) */
+ol:hover,
+ul:hover,
+p:hover,
+h4:hover {
+  color: #f06d77;
+}
+
+/* the elemwnts below control the links */
+a {
+  color: #fb68fc;
+}
+
+a:hover {
+  color: #99ffff;
+}
+
+.cc {
+  a {
+    display: block;
+    padding: 1rem;
+    margin: 0 auto;
+    color: #fb68fc;
+    text-decoration: none;
+    background-color: black;
+    width: 100px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid hotPink;
+  }
+}
+
+.container {
+  max-width: 1050px;
+  display: flex;
+  flex-direction: column;
+  /*   flex-flow: row wrap;  */
+  align-items: stretch;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  border: 3px solid black;
+  padding: 1rem;
+  align-items: stretch;
+  justify-content: stretch;
+  flex: 1fr 1fr 1fr;
+}
+
+@media (min-width: 550px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    flex: 0 0
+      (
+        calc (
+          100% - 2rem
+        ) / 3
+      );
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 700px) {
+  .card {
+    display: inline-block;
+  }
+}
